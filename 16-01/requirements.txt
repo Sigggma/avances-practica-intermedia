@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+networkx
+pyomo
+Pillow
+# from PIL.Image import open as open_image
+# img = np.asarray( open_image('/home/fdo/Pictures/Lenna.png'))
