@@ -1,0 +1,14 @@
+gcc -c -Wall -fpic FBPfunc5_NoDebug.c
+gcc -shared -o FBPfunc5NODEBUG.so FBPfunc5_NoDebug.o
+
+
+# python Cell2Fire_MessagesV2.py --output-folder "C:\dev\Cell2Fire_MessagesOut_19Ago"
+
+
+
+python Cell2Fire_MessagesV2.py --input-instance-folder data/CanadianFBP/400cellsC1/ --output-folder data/CanadianFBP/400cellsC1/output --sim-years 1 --nsims 10 --weather rows --Fire-Period-Length 1.0 --output-messages --ROS-CV 0.0 --seed 123
+
+python Cell2Fire_MessagesV2.py --input-instance-folder dev/Cell2Fire_MessagesOut_19Ago/Sub20/ --output-folder dev/Cell2Fire_MessagesOut_19Ago/Sub20/ --sim-years 1 --nsims 10 --weather rows --Fire-Period-Length 1.0 --output-messages --ROS-CV 0.0 --seed 123
+
+dev/Cell2Fire_MessagesOut_19Ago/Sub20/
+

@@ -1,0 +1,21 @@
+cd ..
+cd mnt
+cd c
+cd C2F-W-main/
+
+
+###
+sudo apt-get install g++
+sudo apt-get install libboost-all-dev
+sudo apt install libeigen3-dev
+
+pip install -r -requirements.txt
+
+sudo apt install python3-pip
+
+make
+###
+
+
+python3 main.py --input-instance-folder data/CanadianFBP/400cellsC1/ --output-folder results/test --sim-years 1 --nsims 10 --weather rows --Fire-Period-Length 1.0 --output-messages --ROS-CV 0.0 --seed 123 --sim C
+
