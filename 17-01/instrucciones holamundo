@@ -1,0 +1,3 @@
+gcc -shared -o holamundo.so -fPIC holamundo.c
+
+python main.py
